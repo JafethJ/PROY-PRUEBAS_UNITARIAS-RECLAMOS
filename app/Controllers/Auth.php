@@ -23,9 +23,9 @@ class Auth extends BaseController
     {
         $rules = [
             'user' => 'required|max_length[30]|is_unique[usuarios.usuario]',
-            'password' => 'required|max_length[50]|min_length[4]',
+            'password' => 'required|max_length[50]|min_length[8]',
             'repassword' => 'matches[password]',
-            'name' => 'required|max_length[100]',
+            'name' => 'required|max_length[50]',
             'email' => 'required|max_length[100]|valid_email|is_unique[usuarios.email]',
             'provincia' => 'required|max_length[2]',
             'distrito' => 'required|max_length[4]',
