@@ -84,7 +84,7 @@ class RegisterVLTest extends CIUnitTestCase
         $test_email = 'avl_r1_nombre@empresa.ac.pa';
         
         // Crear un nombre de exactamente 50 caracteres
-        $max_name = 'JuanCarlosFernandezMartinezGonzalezPerezLopez12346'; 
+        $max_name = 'JuanCarlosFernandezMartinezGonzalezPerezLopez123'; 
 
         $post = [
             'name' => $max_name, // Nombre de 50 caracteres
